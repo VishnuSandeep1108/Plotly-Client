@@ -7,7 +7,7 @@ import "./App.css";
 function App() {
   const [fileName, setFileName] = useState("");
   const [iteration, updateIteration] = useState(0);
-  const [isUploaded, setUploaded] = useState(false); // 0: not uploaded yet;
+  const [isUploaded, setUploaded] = useState(false);
 
   return (
     <div className="App">
