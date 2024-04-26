@@ -14,7 +14,7 @@ function Homepage(props)
             if (inputFile.files.length === 1) {
                 const formData = new FormData();
                 formData.append("files", inputFile.files[0]);
-                fetch("http://localhost:8000/saveFile", {
+                fetch("https://plotly-server.onrender.com/saveFile", {
                     method: 'POST',
                     body: formData
                 })
