@@ -41,7 +41,7 @@ function Plotpage(props) {
     
             const queryString = new URLSearchParams(params).toString();
     
-            const url = `http://localhost:8000/deleteFile?${queryString}`;
+            const url = `https://plotly-server.onrender.com/deleteFile?${queryString}`;
             fetch(url)
             .then(response => {
                 if (response.ok) {
@@ -64,7 +64,7 @@ function Plotpage(props) {
 
         const queryString = new URLSearchParams(params).toString();
 
-        const url = `http://localhost:8000/extractData?${queryString}`;
+        const url = `https://plotly-server.onrender.com/extractData?${queryString}`;
 
 
         fetch(url)
